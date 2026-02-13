@@ -20,8 +20,9 @@ Design and implement an in-memory cache with **Least Recently Used (LRU)** evict
 
 ```bash
 # Demo
-cd solution && python3 lru_cache.py
+source .venv/bin/activate
+cd 01-in-memory-cache/solution && python3 lru_cache.py
 
 # Tests
-cd tests && python3 -m pytest test_lru_cache.py -v
+python3 -m pytest test_lru_cache.py -v
 ```
