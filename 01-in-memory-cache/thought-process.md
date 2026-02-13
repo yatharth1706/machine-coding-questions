@@ -22,7 +22,7 @@ Cache(capacity):
     - delete(key)                   # O(1)
     - Eviction: LRU (Least recently used)
     - Optional: TTL, stats, thread-safety
-
+```
 
 ## Phase 2: Data Structure Choice
 **Why HashMap + Doubly Linked List?**
@@ -37,6 +37,7 @@ Cache(capacity):
 Most Recent                          Least Recent
    HEAD ↔ [A] ↔ [B] ↔ [C] ↔ [D] ↔ TAIL
                                       ↑ evict this
+```
 
 **Tradeoffs considered:**
 - `collections.OrderedDict` is a shortcut but interviewers want to see the manual approach
