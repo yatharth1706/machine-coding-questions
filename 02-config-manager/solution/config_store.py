@@ -96,6 +96,10 @@ class ConfigStore:
         """
         return self.get(key) is not None
     
+    def to_dict(self) -> dict[str, Any]:
+        """Return a deep copy of the entire config."""
+        return copy.deepcopy(self._data)
+    
     def __repr__(self) -> str:
         """
         Return a string representation of the config store.
